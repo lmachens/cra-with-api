@@ -5,6 +5,7 @@
   "description": "Boilerplate for Create-React-App with an Express.js API",
   "main": "server.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "build": "cd client && npm run build && npm run build-storybook",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettify": "prettier --write .",
