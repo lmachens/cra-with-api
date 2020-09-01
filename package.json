@@ -1,0 +1,20 @@
+{
+  "name": "cra-with-api",
+  "version": "1.0.0",
+  "description": "Boilerplate for Create-React-App with an Express.js API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/cra-with-api.git"
+  },
+  "keywords": [],
+  "author": "Leon Machens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmachens/cra-with-api/issues"
+  },
+  "homepage": "https://github.com/lmachens/cra-with-api#readme"
+}
