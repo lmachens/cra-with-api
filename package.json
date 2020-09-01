@@ -1,5 +1,6 @@
 {
   "name": "cra-with-api",
+  "private": true,
   "version": "1.0.0",
   "description": "Boilerplate for Create-React-App with an Express.js API",
   "main": "server.js",
