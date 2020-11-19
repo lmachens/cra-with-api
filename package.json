@@ -7,11 +7,12 @@
   "scripts": {
     "postinstall": "cd client && npm install",
     "build": "cd client && npm run build && npm run build-storybook",
-    "test": "npm run lint && cd client && npm test",
+    "test": "npm run lint && npm run prettier && cd client && npm test",
     "lint": "eslint . --ext .js",
     "prettify": "prettier --write .",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "cd client && npm start",
+    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx,md,mdx,html,css,json}\"",
     "server": "nodemon server.js",
     "storybook": "cd client && npm run storybook",
     "start": "node server.js"
@@ -51,7 +52,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
     }
   },
   "lint-staged": {
