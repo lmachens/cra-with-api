@@ -18,10 +18,16 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
   "rules": {
     "no-unused-vars": [
       "warn",
-      { "vars": "all", "args": "all", "ignoreRestSiblings": true }
-    ]
+      { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }
+    ],
+    "import/no-anonymous-default-export": "off"
   }
 }
